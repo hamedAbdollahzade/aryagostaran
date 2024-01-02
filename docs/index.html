@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
 
 <head>
-  <meta charset="UTF-8" dir="rtl" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./output.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
@@ -18,44 +18,44 @@
   <!-- For Image position khas -->
 
   <!-- start--- Header -->
-  <header class="h-16  relative flex justify-center items-center p-5">
-    <div class="absolute left-[450px] top-12 w-12">
+  <header class="h-16 relative flex justify-center max-sm:justify-between  items-center p-5">
+    <div class="absolute left-[450px] max-sm:left-48 top-12 w-12 max-sm:w-5">
       <img src="https://tarahiweb.net/wp-content/uploads/2020/06/Group-43.png" alt="">
     </div>
-
-    <button
-      class="hover:shadow-xl hover:shadow-blue-800 transition-all duration-700 bg-orange-500 hover:bg-blue-800 text-sm rounded-full p-2 w-44 h-12 flex justify-center items-center text-white">
-      مشاهده دمو
-    </button>
-    <nav class="flex justify-center items-center flex-1">
-      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">وبلاگ</a>
-      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">شرایط و قوانین</a>
-
-      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">درباره ما</a>
-      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">تماس با ما</a>
-      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">مشاهده همه امکانات</a>
-
-      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">تعرفه ها</a>
-
-      <a href="#" class="hover:cursor-pointer text-blue-800 font-bold">خانه</a>
-    </nav>
+    
     <div class="w-40">
       <img src="https://tarahiweb.net/wp-content/uploads/2023/08/cropped-logo.png" alt="logo tarahi web" />
     </div>
-    <button></button>
+
+    <div class="sm:hidden">
+      <button>Meno</button>
+    </div>
+
+
+    <nav class="flex max-sm:hidden justify-center items-center flex-1">
+      <a href="#" class="hover:cursor-pointer text-blue-800 font-bold">خانه</a>
+      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">تعرفه ها</a>
+      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">مشاهده همه امکانات</a>
+      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">تماس با ما</a>
+      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">درباره ما</a>
+      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">شرایط و قوانین</a>
+      <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">وبلاگ</a>
+    </nav>
+    <button
+      class="hover:shadow-xl max-sm:hidden hover:shadow-blue-800 transition-all duration-700 bg-orange-500 hover:bg-blue-800 text-sm rounded-full p-2 w-44 h-12 flex justify-center items-center text-white">
+      مشاهده دمو
+    </button>
+
+
   </header>
   <!-- End---- Header -->
 
   <!-- start--- section1 -->
-  <section class="h-[80vh]  flex px-16 mt-20 mr-10 bg-slate-50 rounded-2xl">
+  <section class="h-[80vh] max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:text-center  flex px-16 max-sm:px-2  mt-20 mr-10 bg-slate-50 rounded-2xl">
 
 
-    <div class="w-1/2">
-      <img src="https://tarahiweb.net/wp-content/uploads/2023/08/crypto-exchange.png" alt="" />
-    </div>
-
-    <div class="w-1/2 p-4 text-right flex flex-col justify-center items-end">
-      <h1 class="font-extrabold text-7xl text-gray-800">
+    <div class="w-1/2 max-sm:w-full p-4  flex flex-col justify-center max-sm:items-center items-start">
+      <h1 class="font-extrabold text-7xl max-sm:text-4xl text-gray-800">
         بهترین اسکریپت صرافی ارز دیجیتال در ایران
       </h1>
       <p class="text-gray-500 p-2">
@@ -64,17 +64,24 @@
         ادمین و پنل کاربر این صرافی را مشاهده نمایید.
       </p>
       <button
-        class="transition-all duration-700 bg-blue-800 hover:bg-orange-500 text-sm rounded-full p-2 w-44 h-12 flex justify-center items-center text-white">
+        class="shadow-2xl shadow-blue-800 transition-all duration-700 bg-blue-800 hover:bg-orange-500 text-sm rounded-full p-2 w-44 h-12 flex justify-center items-center text-white">
         مشاهده دمو
       </button>
     </div>
+
+
+    <div class="w-1/2 max-sm:w-full">
+      <img src="https://tarahiweb.net/wp-content/uploads/2023/08/crypto-exchange.png" alt="" />
+    </div>
+
+
   </section>
   <!-- End---- section1 -->
 
   <!-- start--- section2-->
-  <section class="h-[60vh] flex flex-col justify-around items-center">
-    <img class="mb-6" src="https://tarahiweb.net/wp-content/uploads/2020/06/Group-4.png" alt="" />
-    <h1 class="text-5xl my-10 font-extrabold">امکانات کلی اسکریپت</h1>
+  <section class="h-[60vh] flex flex-col justify-around items-center max-sm:text-center">
+    <img class="mb-6 max-sm:hidden" src="https://tarahiweb.net/wp-content/uploads/2020/06/Group-4.png" alt="" />
+    <h1 class="text-5xl my-10 font-extrabold max-sm:text-4xl">امکانات کلی اسکریپت</h1>
     <div class="flex justify-around w-full ">
       <img src="https://tarahiweb.net/wp-content/uploads/2020/06/Group-39.svg" alt="" />
       <img src="https://tarahiweb.net/wp-content/uploads/2020/06/Group-28.svg" alt="" />
@@ -83,7 +90,7 @@
   <!-- End---- section2 -->
 
   <!-- start--- section3-->
-  <section class="h-[110vh] flex flex-wrap gap-4 justify-around items-center p-14">
+  <section class="h-[110vh] max-sm:h-fit flex flex-wrap gap-4 justify-around items-center p-14">
     <div
       class="text-right transition-all duration-700 bg-slate-50 shadow-2xl shadow-blue-300 hover:shadow-blue-600 rounded-2xl flex flex-col justify-center p-4 items-center w-[18rem] h-72">
       <div class="p-4 w-24"><img src="https://tarahiweb.net/wp-content/uploads/2023/08/user.png" alt=""></div>
@@ -108,18 +115,7 @@
       <h1 class="p-4 font-extrabold text-2xl ">بازار معاملاتی P2P</h1>
       <p class="p-4 text-slate-400">بازار P2P با سفارش گذاریLIMIT MARKET ,OCO , STOP-LIMIT</p>
     </div>
-    <div
-      class="relative text-right transition-all duration-700 bg-blue-800 shadow-2xl shadow-blue-300 hover:shadow-blue-600 rounded-2xl flex flex-col justify-center p-4 items-center w-[16rem] h-80">
-      <div class="absolute right-4 top-0">
-        <img src="https://tarahiweb.net/wp-content/uploads/2020/06/Group-30.svg" alt="">
-      </div>
-      <h1 class="mt-24  font-extrabold text-4xl text-white ">80+ امکانات دیگر</h1>
-      <p class="p-6 text-white">مشاهده همه امکانات</p>
 
-      <button
-        class="absolute right-4 text-xl bottom-14 bg-blue-600 w-10 h-10 flex justify-center items-center  rounded-xl text-white">></button>
-
-    </div>
     <div
       class="text-right transition-all duration-700 bg-slate-50 shadow-2xl shadow-blue-300 hover:shadow-blue-600 rounded-2xl flex flex-col justify-center p-4 items-center w-[18rem] h-72">
       <div class="p-4 w-24"><img src="https://tarahiweb.net/wp-content/uploads/2023/08/user.png" alt=""></div>
@@ -139,17 +135,35 @@
       <p class="p-4 text-slate-400">پشتیبانی از سه زبان فارسی ، عربی و انگلیسی و همچنین امکان ثبت نام بین المللی</p>
     </div>
 
+    <div
+      class="relative text-right transition-all duration-700 bg-blue-800 shadow-2xl shadow-blue-300 hover:shadow-blue-600 rounded-2xl flex flex-col justify-center p-4 items-center w-[16rem] h-80">
+      <div class="absolute right-4 top-0">
+        <img src="https://tarahiweb.net/wp-content/uploads/2020/06/Group-30.svg" alt="">
+      </div>
+      <h1 class="mt-24  font-extrabold text-4xl text-white ">80+ امکانات دیگر</h1>
+      <p class="p-6 text-white">مشاهده همه امکانات</p>
+
+      <button
+        class="absolute right-4 text-xl bottom-14 bg-blue-600 w-10 h-10 flex justify-center items-center  rounded-xl text-white">
+        < </button>
+
+    </div>
+
 
   </section>
   <!-- End---- section3 -->
 
   <!-- start--- section4 -->
-  <section class="h-[80vh] flex justify-center items-center gap-4 px-16 mt-20 ml-10 bg-slate-50 rounded-2xl">
+  <section class="h-[80vh]  max-sm:overflow-hidden max-sm:w-full  flex justify-center items-center max-sm:flex-col gap-4 px-16 max-sm:px-2 mt-20 max-sm:mt-3 ml-10 max-sm:ml-0 bg-slate-50 rounded-2xl max-sm:pb-8">
 
-    <div class="  h-full w-1/2 flex flex-col justify-center items-end text-right">
-      <h1 class="text-5xl font-bold  w-[60%]">
+    <div class="w-1/2 max-sm:w-full max-sm:flex-1">
+      <img src="https://tarahiweb.net/wp-content/uploads/2020/06/07.png" alt="">
+    </div>
+
+    <div class=" h-full max-sm:flex-1 w-1/2 max-sm:w-full flex flex-col justify-center items-start max-sm:items-center text-right">
+      <h1 class="text-5xl max-sm:text-3xl font-bold  w-[60%] max-sm:w-full max-sm:text-center ">
         چرا اسکریپت صرافی آریا</h1>
-      <p class="text-gray-400 py-6  w-[60%]">
+      <p class="text-gray-400 py-6  w-[60%] max-sm:w-full max-sm:text-xs">
         شرکت آریا گستران از سال 1399 طراحی و توسعه اسکریپت صرافی ارز دیجیتال را آغاز کرده و به صورت تخصصی در این زمینه
         فعالیت میکند ، یکی از مزیت های بزرگ شرکت آریا گستران تمرکز اصلی این شرکت بر روی توسعه اسکریپت صرافی بوده و به
         صورت مستمر درحال آپدیت و دیباگ این پلتفرم هستیم .
@@ -166,9 +180,6 @@
       </button>
     </div>
 
-    <div class="w-1/2">
-      <img src="https://tarahiweb.net/wp-content/uploads/2020/06/07.png" alt="">
-    </div>
 
     </div>
   </section>
@@ -176,26 +187,26 @@
 
 
   <!-- start--- section5  ----->
-  <section class="h-[90vh] flex flex-col justify-center p-10 items-center  ">
+  <section class="h-[90vh] max-sm:h-full flex flex-col justify-center p-10 items-center   ">
 
     <div class="flex justify-center items-center gap-x-20">
-      <img src="https://tarahiweb.net/wp-content/uploads/2020/06/Group-45.png" alt="">
-      <h1 class="text-5xl font-bold mb-10">نظر مشتریان ما</h1>
+      <h1 class="text-5xl font-bold mb-10 max-sm:text-4xl">نظر مشتریان ما</h1>
+      <img class="max-sm:hidden" src="https://tarahiweb.net/wp-content/uploads/2020/06/Group-45.png" alt="">
 
     </div>
 
 
-    <div class="flex gap-x-10">
+    <div class="flex max-sm:flex-col  gap-x-10 max-sm:gap-y-10 max-sm:w-full">
 
 
       <div
-        class="bg-slate-50 p-4 shadow-md  hover:shadow-2xl   rounded-2xl w-[400px] h-[250px] flex flex-col overflow-hidden text-right">
+        class="bg-slate-50 p-4 shadow-md  hover:shadow-2xl   rounded-2xl w-[400px] h-[250px] max-sm:w-full  flex flex-col overflow-hidden text-right">
         <div class="flex  w-full">
+          <div class=" px-4"><img width="50px" src="https://tarahiweb.net/wp-content/uploads/2023/08/user.png" alt="">
+          </div>
           <div class="flex-1 flex flex-col justify-center ">
             <h1>آقای سهرابی</h1>
             <p>خریدار نسخه 1.7 پرو</p>
-          </div>
-          <div class=" px-4"><img width="50px" src="https://tarahiweb.net/wp-content/uploads/2023/08/user.png" alt="">
           </div>
         </div>
         <p class="p-4">بنده از سال 1400 با مجموعه آریا گستران آشنا شدم و درحال دریافت خدمات از این شرکت هستم ،بابت
@@ -204,13 +215,13 @@
 
 
       <div
-        class="bg-slate-50 p-4 shadow-md  hover:shadow-2xl   rounded-2xl w-[400px] h-[250px] flex flex-col overflow-hidden text-right">
+        class="bg-slate-50 p-4 shadow-md  hover:shadow-2xl   rounded-2xl w-[400px] h-[250px] max-sm:w-full flex flex-col overflow-hidden text-right">
         <div class="flex  w-full">
+          <div class=" px-4"><img width="50px" src="https://tarahiweb.net/wp-content/uploads/2023/08/user.png" alt="">
+          </div>
           <div class="flex-1 flex flex-col justify-center ">
             <h1>آقای حسینی</h1>
             <p>خریدار نسخه 1.7 پرو</p>
-          </div>
-          <div class=" px-4"><img width="50px" src="https://tarahiweb.net/wp-content/uploads/2023/08/user.png" alt="">
           </div>
         </div>
         <p class="p-4">مجموعه ما با کمک شرکت آریا گستران توانست طی یک هفته صرافی خود را راه اندازی نماید ، از شرکت آریا
@@ -219,13 +230,13 @@
 
 
       <div
-        class="bg-slate-50 p-4 shadow-md  hover:shadow-2xl   rounded-2xl w-[400px] h-[250px] flex flex-col overflow-hidden text-right">
+        class="bg-slate-50 p-4 shadow-md  hover:shadow-2xl   rounded-2xl w-[400px] h-[250px] max-sm:w-full flex flex-col overflow-hidden text-right">
         <div class="flex  w-full">
+          <div class=" px-4"><img width="50px" src="https://tarahiweb.net/wp-content/uploads/2023/08/user.png" alt="">
+          </div>
           <div class="flex-1 flex flex-col justify-center ">
             <h1>آقای غلامپور</h1>
             <p>خریدار نسخه 1.7 پرو</p>
-          </div>
-          <div class=" px-4"><img width="50px" src="https://tarahiweb.net/wp-content/uploads/2023/08/user.png" alt="">
           </div>
         </div>
         <p class="p-4">بابت ارائه خدمات پشتیبانی شرکت آریا گستران از این مجموعه تشکر میکنم و میتونم بگم یکی از بهترین
@@ -242,13 +253,12 @@
   </section>
   <!-- End---- section5 -->
 
-
-
+  
   <!-- start section footer -->
-  <footer class="h-screen p-4 flex flex-col justify-between items-center">
+  <footer class=" max-sm:text-center max-sm:h-full h-screen p-4 flex flex-col justify-between items-center">
     <div>
-      <h1 class="text-center font-extrabold text-5xl">
-        09154743239 , 051-38910110
+      <h1 class="text-center font-extrabold text-5xl max-sm:text-4xl">
+        051-38910110 , 09154743239  
       </h1>
       <p class="p-8">
         جهت دریافت مشاوره خرید میتوانید از طریق راه ارتباطی بالا با ما در
@@ -257,44 +267,50 @@
     </div>
 
     <div
-      class="bg-blue-800 px-16 relative text-slate-400 flex-1 w-full m-4 rounded-3xl flex justify-center items-center">
-      <div class="flex-1 h-full flex flex-col justify-center items-end m-4">
-        <h1 class="text-xl font-extrabold text-white">نماد اعتماد</h1>
-        <a href="#">
-          <img class="w-36 my-2" src="./img/enamad.png" alt="" />
-        </a>
-      </div>
+    class="bg-blue-800 px-16 max-sm:px-2  relative text-slate-400 flex-1 w-full m-4 rounded-3xl flex max-sm:flex-col  justify-center items-center">
+    
+    <div class="flex-1 flex flex-col justify-center items-start  text-right w-72 m-4">
+      <img class="w-48 mb-2" src="https://tarahiweb.net/wp-content/uploads/2023/08/logo.png" alt="" />
+      <p class="py-6">
+        شرکت آریا گستران دارای مجوز های اینماد (نماد اعتماد الکترونیکی) ،
+        نماد ساماندهی و پروانه کسب از اتحادیه رایانه و ماشین های اداری مشهد
+        میباشد.
+      </p>
+      <img class="w-40" src="./img/logos.PNG" alt="" />
+    </div>
 
-      <div class="h-full flex-1 flex flex-col justify-center text-right m-4">
-        <h1 class="text-xl font-extrabold mb-6 text-white">مشخصات تماس</h1>
-        <p>مشهد ، صیاد شیرازی 19 ، پلاک 3 ، طبقه 3</p>
-        <p>info@aryagostaran.com</p>
-      </div>
-
-      <div class="flex-1 flex flex-col text-right m-4">
+      <div class="flex-1 flex flex-col  text-right m-4 ">
         <h1 class="text-xl font-extrabold mb-6 text-white">لینک های سریع</h1>
         <a class="cursor-pointer hover:text-white" href="#">مشاهده دمو پنل ادمین</a>
         <a class="cursor-pointer hover:text-white" href="#">مشاهده دمو پنل کاربر</a>
         <a class="cursor-pointer hover:text-white" href="#">مشاهده همه امکانات</a>
         <a class="cursor-pointer hover:text-white" href="#">خرید اسکریپت</a>
       </div>
-
-      <div class="flex-1 flex flex-col justify-center items-end text-right w-72 m-4">
-        <img class="w-48 mb-2" src="https://tarahiweb.net/wp-content/uploads/2023/08/logo.png" alt="" />
-        <p class="py-6">
-          شرکت آریا گستران دارای مجوز های اینماد (نماد اعتماد الکترونیکی) ،
-          نماد ساماندهی و پروانه کسب از اتحادیه رایانه و ماشین های اداری مشهد
-          میباشد.
-        </p>
-        <img class="w-40" src="./img/logos.PNG" alt="" />
+    
+    
+    <div class="h-full flex-1 flex flex-col justify-center text-right m-4">
+      <h1 class="text-xl font-extrabold mb-6 text-white">مشخصات تماس</h1>
+        <p>مشهد ، صیاد شیرازی 19 ، پلاک 3 ، طبقه 3</p>
+        <p>info@aryagostaran.com</p>
       </div>
+
+
       <div class="absolute -z-10 left-[-10px] -bottom-8">
         <img src="https://tarahiweb.net/wp-content/uploads/2020/06/Group-29.svg" alt="" />
       </div>
+      
+      <div class="flex-1 h-full flex flex-col justify-center items-start m-4">
+        <h1 class="text-xl font-extrabold text-white">نماد اعتماد</h1>
+        <a href="#">
+          <img class="w-36 my-2" src="./img/enamad.png" alt="" />
+        </a>
+      </div>
+      
+      
     </div>
-
+    
     <div>
-      <p class="p-2">
+      <p class="p-2 max-sm:text-center max-sm:mt-10">
         تمامی حقوق مادی و معنوی این سایت متعلق به شرکت آریا گستران داده پندار
         میباشد
       </p>
