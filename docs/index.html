@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" class="scroll-smooth transition-all duration-1000">
+<html lang="fa" dir="rtl" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,15 +10,83 @@
   <!-- <link rel="stylesheet" href="./fontface.css"> -->
 </head>
 
-<body >
-  <!-- For Image Fixed_position -->
-  <section id="topScreen">
-    <img src="https://cdn.goftino.com/profile/63e0d6732d6404339112136caqkk.png" alt=""
+<body>
+  <!-- For Fixed_position -->
+  <section id="topScreen" >
+
+    <img onclick="toggleVisibale(`#div_support`)" src="https://cdn.goftino.com/profile/63e0d6732d6404339112136caqkk.png" alt=""
       class="fixed z-[999] w-16 right-8 bottom-8 cursor-pointer border-2 rounded-full" />
-    <a href="#topScreen" class="fixed z-[999] w-10 h-10 left-4 bottom-4 border-4 rounded-full p-2 cursor-pointer" >
-      <img  
-        src="./img/chevron-up-50.png" alt="chevron-up" />
+
+    <a href="#topScreen" class="fixed z-[999] w-10 h-10 left-4 bottom-4 border-4 rounded-full p-2 cursor-pointer">
+      <img src="./img/chevron-up-50.png" alt="chevron-up" />
     </a>
+
+
+    <!-- start Container PopUp div_support-->
+    <div id="div_support"
+      class="hidden fixed z-[999] bg-slate-300 w-[380px] max-sm:w-full max-sm:inset-0 h-[95%] max-sm:h-full rounded-lg flex flex-col justify-center items-center  right-8 top-2 ">
+      <div class="h-20 bg-blue-900 w-full flex justify-start p-2 items-center rounded-t-lg ">
+        <button onclick="toggleVisibale(`#div_support`)"
+          class="bg-blue-700 hover:bg-blue-800 px-2 text-xl rounded-full text-white absolute left-2 top-2 ">x</button>
+        <img class="w-11 rounded-full" src="https://cdn.goftino.com/profile/63e0d6732d6404339112136cz2ku.jpg" alt="">
+        <div class="flex flex-col mx-2">
+          <span class="text-white font-bold">بخش فروش</span>
+          <span class="text-sm text-slate-300">پاسخگوی سوالات شما هستیم</span>
+        </div>
+      </div>
+      <div class="flex-1  w-full flex flex-col justify-start items-center p-3">
+
+        <div class="self-start flex gap-1 my-1">
+          <img class="h-8 self-end rounded-full " src="https://cdn.goftino.com/profile/63e0d6732d6404339112136cz2ku.jpg"
+            alt="">
+          <div class="w-full bg-slate-50 rounded-lg p-2 text-sm">
+            سلام خوش آمدید 🌷 <br>
+            اگر سوالی در مورد راه اندازی صرافی ارز دیجیتال دارید ، در خدمت شما هستیم
+          </div>
+        </div>
+
+        <div class="self-start flex gap-1 my-1  w-full ">
+          <img class="h-8 self-end rounded-full " src="https://cdn.goftino.com/profile/63e0d6732d6404339112136cz2ku.jpg"
+            alt="">
+          <div class="w-full  flex flex-col justify-center items-center bg-slate-50 rounded-lg p-2 text-sm">
+            <span> برای شروع گفتگو فرم زیر را تکمیل کنید</span>
+
+            <input class="outline-none w-full border-b-[1px]  bg-slate-50 my-1 p-2" type="text"
+              placeholder="نام و نام خانوادگی">
+            <input class="outline-none w-full border-b-[1px]  bg-slate-50 my-1 p-2 text-right" type="tel"
+              placeholder="شماره موبایل">
+            <button class="bg-blue-800  w-20 m-2 text-white p-2 rounded-2xl">شروع</button>
+          </div>
+        </div>
+
+        <a href="#" class="absolute bottom-5 text-xs p-1 bg-slate-200 rounded-full"> سامانه گفتگوی آنلاین <span
+            class="font-bold">گفتینو</span> </a>
+      </div>
+    </div>
+    <!-- End Container PopUp div_support -->
+
+
+    <!-- start Container PopUp div_meno-->
+
+    <div id="div_meno" class=" hidden  bg-[#fffffff5]   fixed z-[998] inset-1  ">
+      <div class=" flex flex-col h-full justify-center items-center gap-4 text-2xl font-extrabold">
+
+        <button onclick="toggleVisibale(`#div_meno`)" class="absolute left-4 top-4 border  text-2xl px-2 rounded-full">x</button>
+
+        <a href="" class="text-blue-800">خانه</a>
+        <a href="">تعرفه ها</a>
+        <a href="">مشاهده همه امکانات</a>
+        <a href="">تماس با ما</a>
+        <a href="">درباره ما</a>
+        <a href="">شرایط و قوانین</a>
+        <a href="">وبلاگ</a>
+      </div>
+
+    </div>
+
+    <!-- End Container PopUp div_meno-->
+
+
   </section>
   <!-- For Image position khas -->
 
@@ -33,13 +101,13 @@
     </div>
 
     <div class="sm:hidden">
-      <a href="#">
+      <a onclick="toggleVisibale(`#div_meno`)" href="#">
         <img src="./img/meno.PNG" alt="">
       </a>
     </div>
 
 
-    <nav class="flex max-sm:hidden justify-center items-center flex-1">
+    <nav class=" flex max-sm:hidden justify-center items-center sm:max-lg:text-sm flex-1">
       <a href="#" class="hover:cursor-pointer text-blue-800 font-bold">خانه</a>
       <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">تعرفه ها</a>
       <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">مشاهده همه امکانات</a>
@@ -49,7 +117,7 @@
       <a href="#" class="hover:cursor-pointer hover:text-blue-600 font-bold m-2">وبلاگ</a>
     </nav>
     <button
-      class="hover:shadow-xl max-sm:hidden hover:shadow-blue-800 transition-all duration-700 bg-orange-500 hover:bg-blue-800 text-sm rounded-full p-2 w-44 h-12 flex justify-center items-center text-white">
+      class=" hover:shadow-xl max-sm:hidden hover:shadow-blue-800 transition-all duration-700 bg-yellow-400 hover:bg-blue-800 text-sm rounded-full p-2 w-44 sm:max-lg:w-20 h-12 flex justify-center items-center text-white">
       مشاهده دمو
     </button>
 
@@ -59,14 +127,14 @@
 
   <!-- start--- section1 -->
   <section
-    class="h-[80vh] max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:text-center  flex px-16 max-sm:px-2  mt-20 mr-10 bg-slate-50 rounded-2xl">
+    class=" max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:text-center  flex justify-center items-center px-16 max-sm:px-2  mt-20 mr-10 bg-slate-50 rounded-2xl">
 
 
     <div class="w-1/2 max-sm:w-full p-4  flex flex-col justify-center max-sm:items-center items-start">
-      <h1 class="font-extrabold text-7xl max-sm:text-4xl text-gray-800">
+      <h1 class="font-extrabold text-7xl sm:max-lg:text-3xl max-sm:text-4xl text-gray-800">
         بهترین اسکریپت صرافی ارز دیجیتال در ایران
       </h1>
-      <p class="text-gray-500 p-2">
+      <p class="text-gray-500 p-2 sm:max-lg:text-lg">
         اسکریپت صرافی ارز دیجیتال آریا یکی از بزرگ ترین و بهترین اسکریپت های
         موجود در بازار ایران میباشد ، شما میتوانید از طریق لینک زیر دمو پنل
         ادمین و پنل کاربر این صرافی را مشاهده نمایید.
@@ -78,7 +146,7 @@
     </div>
 
 
-    <div class="w-1/2 max-sm:w-full">
+    <div class="w-1/2 max-sm:w-full sm:max-lg:">
       <img src="https://tarahiweb.net/wp-content/uploads/2023/08/crypto-exchange.png" alt="" />
     </div>
 
@@ -87,7 +155,7 @@
   <!-- End---- section1 -->
 
   <!-- start--- section2-->
-  <section class="h-[60vh] flex flex-col justify-around items-center max-sm:text-center">
+  <section class=" flex flex-col justify-around items-center max-sm:text-center">
     <img class="mb-6 max-sm:hidden" src="https://tarahiweb.net/wp-content/uploads/2020/06/Group-4.png" alt="" />
     <h1 class="text-5xl my-10 font-extrabold max-sm:text-4xl">امکانات کلی اسکریپت</h1>
     <div class="flex justify-around w-full ">
@@ -98,7 +166,7 @@
   <!-- End---- section2 -->
 
   <!-- start--- section3-->
-  <section class="h-[110vh] max-sm:h-fit flex flex-wrap gap-4 justify-around items-center p-14">
+  <section class=" max-sm:h-fit flex flex-wrap gap-4 justify-around items-center p-14">
     <div
       class="text-right transition-all duration-700 bg-slate-50 shadow-2xl shadow-blue-300 hover:shadow-blue-600 rounded-2xl flex flex-col justify-center p-4 items-center w-[18rem] h-72">
       <div class="p-4 w-24"><img src="https://tarahiweb.net/wp-content/uploads/2023/08/user.png" alt=""></div>
@@ -163,7 +231,7 @@
 
   <!-- start--- section4 -->
   <section
-    class="h-[80vh]  max-sm:overflow-hidden max-sm:w-full  flex justify-center items-center max-sm:flex-col gap-4 px-16 max-sm:px-2 mt-20 max-sm:mt-3 ml-10 max-sm:ml-0 bg-slate-50 rounded-2xl max-sm:pb-8">
+    class="    max-sm:overflow-hidden max-sm:w-full  flex justify-center items-center max-sm:flex-col  sm:max-lg:flex-col gap-4 px-16 max-sm:px-2 mt-20 max-sm:mt-3 ml-10 max-sm:ml-0 bg-slate-50 rounded-2xl max-sm:pb-8">
 
     <div class="w-1/2 max-sm:w-full max-sm:flex-1">
       <img src="https://tarahiweb.net/wp-content/uploads/2020/06/07.png" alt="">
@@ -197,7 +265,7 @@
 
 
   <!-- start--- section5  ----->
-  <section class="h-[90vh] max-sm:h-full flex flex-col justify-center p-10 items-center   ">
+  <section class="max-sm:h-full flex flex-col justify-center p-10 items-center   ">
 
     <div class="flex justify-center items-center gap-x-20">
       <h1 class="text-5xl font-bold mb-10 max-sm:text-4xl">نظر مشتریان ما</h1>
@@ -206,7 +274,7 @@
     </div>
 
 
-    <div class="flex max-sm:flex-col  gap-x-10 max-sm:gap-y-10 max-sm:w-full">
+    <div class="flex max-sm:flex-col sm:max-lg:flex-col  gap-x-10 sm:max-lg:gap-y-10  max-sm:gap-y-10 max-sm:w-full">
 
 
       <div
@@ -265,7 +333,7 @@
 
 
   <!-- start section footer -->
-  <footer class=" max-sm:text-center max-sm:h-full h-screen p-4 flex flex-col justify-between items-center">
+  <footer class="max-sm:text-center max-sm:h-full h-screen p-4 flex flex-col justify-between items-center">
     <div>
       <h1 class="text-center font-extrabold text-5xl max-sm:text-4xl">
         051-38910110 , 09154743239
@@ -277,7 +345,7 @@
     </div>
 
     <div
-      class="bg-blue-800 px-16 max-sm:px-2  relative text-slate-400 flex-1 w-full m-4 rounded-3xl flex max-sm:flex-col  justify-center items-center">
+      class="sm:max-lg:flex-col bg-blue-800 px-16 max-sm:px-2  relative text-slate-400 flex-1 w-full m-4 rounded-3xl flex max-sm:flex-col  justify-center items-center">
 
       <div class="flex-1 flex flex-col justify-center items-start  text-right w-72 m-4">
         <img class="w-48 mb-2" src="https://tarahiweb.net/wp-content/uploads/2023/08/logo.png" alt="" />
@@ -327,6 +395,10 @@
     </div>
   </footer>
   <!-- End section footer -->
+
+
+  <script src="./index.js"></script>
+
 </body>
 
 </html>
