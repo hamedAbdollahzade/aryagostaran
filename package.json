@@ -1,0 +1,23 @@
+{
+  "name": "aryagostaran",
+  "version": "1.0.0",
+  "description": "with html &amp; tailwindcss",
+  "main": "tailwind.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamedAbdollahzade/aryagostaran.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamedAbdollahzade/aryagostaran/issues"
+  },
+  "homepage": "https://github.com/hamedAbdollahzade/aryagostaran#readme"
+}
